@@ -1,0 +1,512 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*outline: solid 2px red;*/
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    font-family: 'Bai Jamjuree';
+    background-color:  hsl(0, 0%, 100%);
+    overflow-x: hidden;
+    
+
+}
+
+/*header{
+    /*HERE WE CAN EITHER USE FLEXBOX OR JUST TURN BOTH OF THEM TO BLOCK 
+    AND SET THE POSITION AND MARGIN*/
+  /*  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}*/
+.background{
+   background-size: cover;
+   height: 363px;
+    width:100%;
+   background-image: url("./images/bg-header-desktop.png");
+  }
+
+.logo{
+    /*width: 130px;+++TRY WIDTH WITH % ++++*/
+    width:8.5%;
+    /*display: flex;margin-top: -17%;*/
+    display: block;
+    position: relative;
+    margin: -17% auto 0 auto;
+    opacity: 80%;
+}
+
+.motivation{
+    text-align:center ;
+    margin-top: 2%;
+
+}
+.motivation:first-of-type h1{
+    color: hsl(210, 10%, 33%);
+    font-weight: 700;
+    font-size: 4.5rem;
+
+}
+
+.motivation p{
+    color: hsla(212, 10%, 33%, 0.326);
+    font-size: 1.9rem;
+    /*width: 741px;*/
+    width:50%;
+    margin:20px auto 0 auto;
+    
+
+}
+.motivation h1{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 4rem;
+
+}
+
+.download{
+   
+    display: flex;    
+    justify-content:center;
+    align-content: center;
+    margin:60px 0 150px 0px;
+    
+}
+.ios{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:230px;
+    height: 60px;
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    padding: 16px 0;
+    margin-right: 10px;
+    box-shadow: 0 3px hsl(171, 65%, 40%), 0 6px 10px hsla(171, 66%, 44%, 0.786)  ;
+    font-weight: 500;
+}
+
+.mac{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:230px;
+    height: 60px;
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    padding: 16px 0;
+    box-shadow: 0px 3px hsl(233, 58%, 57%), 0 6px 10px hsl(233, 100%, 69%, 0.786);
+    font-weight: 500;
+
+}
+.ios:hover{
+    background-color: hsla(171, 66%, 44%, 0.671);
+
+}
+.mac:hover {
+    background-color: hsla(233, 100%, 69%, 0.671);
+} 
+
+.features img{
+    margin-left: -40px;
+    display: flex;
+
+}
+
+.features{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.f{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: -70px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 400px;
+    /*margin: 0 10px  0 0;*/
+}
+
+.feature h2{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 2.5rem;
+
+}
+
+.feature p{
+    color: hsla(212, 10%, 33%, 0.326);
+    font-size: 1.9rem;
+    margin:20px 0 50px 0;
+    width: 400px;
+}
+
+.display{
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.additions{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    text-align: center;
+    margin:50px 10px 150px 10px
+}
+
+.add img{
+    margin-bottom: 40px;
+    width: 44px;
+}
+.preview img{
+    width: 50px;
+    margin-bottom: 45px;
+
+}
+.add h3{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.add p{
+    color: hsla(212, 10%, 33%, 0.326);
+    font-size: 1.9rem;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom:150px ;
+}
+.vendors{
+    display: flex;
+    width:1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: hsla(200, 10%, 70%, 0.219) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   /* height: 170px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(15,100px);
+    grid-template-rows: repeat(5,30px);*/
+}
+
+footer img{
+    width:60px;
+    margin: 50px;
+   /* grid-column: 2 / 3;
+    grid-row: 3 / 4;*/
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    flex-wrap: wrap;    
+}
+.nav li{
+    padding: 10px 40px 10px 40px;
+    flex-wrap: wrap;
+
+}
+.nav{
+    font-size: 1.9rem;
+    color:hsla(212, 10%, 33%, 0.9); 
+    display: flex;
+    /*grid-column: 4 / 10;
+    grid-row: 2 / 5;
+    display: grid;
+    grid-template-columns: repeat(15,100px);
+    grid-template-rows: repeat(5,30px);*/
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+    width:100px;
+}
+.fa-brands{
+    display: flex;
+    /*justify-content: space-between;
+    align-items: center;*/
+    padding: 15px;
+    color: hsl(210, 10%, 33%);
+    font-size: 2.3rem;
+}
+
+.nav li:hover , .fa-brands:hover{
+    color: hsl(171, 71%, 54%);
+}
+
+/*------------------I AM HEEEEEEEEEEEEREEEEEEEEE--------------------------------*/
+@media only screen and (max-width:376px){
+   
+    
+   /* body{
+        
+    overflow-x: hidden!important;
+    
+    }*/
+    header{
+   
+    width: 375px; 
+    
+    }
+    
+    
+    .background{
+       
+       background-image: url("./images/bg-header-mobile.png") ;
+       height: 390px;
+       /*width:100%;*/ /*CHECK THIS AT THE END*/
+       width:375px;
+    overflow-x: hidden;
+       
+    }
+    
+    .logo{
+        width: 120px;
+        /*margin: -60% 100px 0px 100px; CHECK THIS AT THE END*/
+        margin: -60% auto 0px auto;
+    overflow-x: hidden;
+
+    } 
+    .motivation{
+        margin-top: 12%;
+        width: 100%;
+    overflow-x: hidden;
+
+    }
+    .motivation:first-of-type h1{
+        font-weight: 600;
+        font-size: 3rem;
+        margin:auto auto;
+        overflow-x: hidden;
+
+
+    }
+    
+    .motivation p{
+        /* width: 741px;*/
+        font-size: 1.4rem;
+       font-weight: 600;
+        width:76%;
+        margin:20px auto 0 auto;
+        overflow-x: hidden;
+        line-height: 1.6;
+    
+    }
+    .motivation h1{
+        width: 80%;
+        font-size: 3rem;
+        margin: auto auto;
+        overflow-x: hidden;
+    }
+
+    .download{
+        margin:50px 0px 0px 0px; /*CHANGED HERE********************************************/
+        flex-direction: column;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+
+    .ios{
+        width:80%;
+        overflow-x: hidden;
+    }
+    .mac{
+        margin: 25px 0 90px 0 ;
+        width:80%;
+        overflow-x: hidden;
+               
+    }
+
+    .features img{
+       /* margin: auto auto; /*CHECK AT THE END*//*CHANGED HERE*********************************************/margin-left: 0px;
+        width:320px;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    
+    }
+    
+    .features{
+        margin-top: 50px;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+
+    }
+    .f{
+        flex-wrap: wrap;
+        flex-direction: column;
+        /*align-items: stretch;*/
+        margin:auto auto;
+        margin-top: 50px;
+        overflow-x: hidden;
+
+
+    }
+    .feature{
+        flex-wrap: wrap;
+        width: 80%;
+        /*margin: 0 10px  0 0;*/
+        text-align: center;
+        align-items: stretch;
+    overflow-x: hidden;
+    margin: auto auto;
+
+    }
+    
+    .feature h2{
+        
+        font-size: 2rem;
+        overflow-x: hidden;
+    
+    }
+    
+    .feature p{
+       
+        font-size: 1.5rem;
+        /*margin:20px 0 50px 0;*/
+        width: 100%;
+        overflow-x: hidden;
+        font-weight: 600;
+    }
+    .display{
+        overflow-x: hidden;
+        width: 100%;
+              margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .display img{
+        width:350px;
+        margin: auto auto;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        
+    }
+
+    .additions{
+       flex-direction: column;
+       width: 100%;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        margin: auto auto;
+    
+    }
+    
+    .add{
+        flex-wrap: wrap;
+        width: 86%;
+        margin:90px 10px 0px 10px;
+        overflow-x: hidden;
+    }
+    
+    
+    .preview img{
+        width: 50px;
+        margin-bottom: 45px;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+    .add h3{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        overflow-x: hidden;
+    }
+    
+    .add p{
+        font-size: 1.5rem;
+        overflow-x: hidden;
+        line-height: 1.6;
+        font-weight: 600;
+    }
+
+    .wrap{
+        margin:130px auto 120px auto;
+        overflow-x: hidden;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .vendors{
+       flex-direction: column;
+       margin-bottom:50px ;
+        height: 500px;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        
+    }
+
+    footer{
+        flex-direction: column;
+        margin-top: 80px;
+        width: 100%;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+    
+    footer img{
+       align-items: center; /*CHECK THIS */
+        margin: 50px 0 20px 0;
+        overflow-x: hidden;
+
+    }
+
+    
+    .nav ul{
+        justify-content: space-between;
+        height: 250px;
+        text-align: center;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+    
+    .fa-brands{
+        padding: 20px;
+        margin: 15px 0 30px 0;
+    font-size: 3rem;
+
+    overflow-x: hidden;
+    }
+/*.media{
+    flex-wrap: wrap;
+}
+.nav{ flex-wrap: wrap;}*/
+}
+ 
